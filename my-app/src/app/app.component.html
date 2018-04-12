@@ -1,0 +1,17 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<div style="text-align:center">
+    <h1>
+        Welcome to {{ title }}!
+    </h1>
+
+    <button *ngIf="!currentUser" (click)="login()">Login</button>
+    <button *ngIf="currentUser" (click)="logout()">Logout: {{currentUser.displayName}}</button>
+
+</div>
+
+<div class='message' *ngFor="let m of messages">
+    <div class='imageHolder'><img class="image" [src]="m.fromImageUrl"></div>
+    From: {{m.fromEmail}}<br>{{m.message}}
+
+</div>

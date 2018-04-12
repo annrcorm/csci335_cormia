@@ -1,0 +1,13 @@
+.message {
+    border-style: solid; border-width: thin; width: 400px;
+    padding: 3px; margin: 3px; background-color: azure;
+    clear: both; height: auto;  min-height: 100px;
+}
+
+.imageHolder {
+    width: 100px;  height: 100px; float: left;
+}
+
+.image {
+    max-width: 100px;  max-height: 100px;
+}
